@@ -8,6 +8,7 @@ License:	None
 Group:		Development/Python
 BuildRequires:	python
 BuildSystem:	python
+BuildRequires:	python%{pyver}dist(numpy)
 
 %description
 ml_dtypes is a stand-alone implementation of several NumPy dtype extensions used in machine learning.
