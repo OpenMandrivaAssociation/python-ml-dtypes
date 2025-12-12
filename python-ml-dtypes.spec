@@ -1,6 +1,6 @@
 Name:		python-ml-dtypes
 Version:	0.5.3
-Release:	1
+Release:	2
 Source0:	https://files.pythonhosted.org/packages/source/m/ml-dtypes/ml_dtypes-%{version}.tar.gz
 Summary:	ml_dtypes is a stand-alone implementation of several NumPy dtype extensions used in machine learning.
 URL:		https://pypi.org/project/ml-dtypes/
