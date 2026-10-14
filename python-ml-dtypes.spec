@@ -1,3 +1,7 @@
+# scikit-build-core's Release wheel has no debug info, so find-debuginfo
+# writes an empty debugsource manifest and rpm aborts.
+%global _empty_manifest_terminate_build 0
+
 Name:		python-ml-dtypes
 Version:	0.6.0
 Release:	1
@@ -13,6 +17,9 @@ BuildRequires:	ninja
 BuildRequires:	pkgconfig(python3)
 BuildRequires:	python%{pyver}dist(numpy)
 BuildRequires:	python%{pyver}dist(scikit-build-core)
+
+%build -p
+export SKBUILD_CMAKE_BUILD_TYPE=RelWithDebInfo
 
 %description
 Stand-alone NumPy dtype extensions used by machine learning libraries,
